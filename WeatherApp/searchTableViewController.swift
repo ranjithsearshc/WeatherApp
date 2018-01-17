@@ -11,7 +11,7 @@ import UIKit
 let cellIdentifier = "basicCell"
 class searchTableViewController: UITableViewController,UISearchResultsUpdating {
 
-    let unfilteredCityNames = WAUserUtils.cityNamesList.sorted()
+    let unfilteredCityNames = WAUserUtils.cityNamesList
     var filteredCityNames: [String]?
     let searchController = UISearchController(searchResultsController: nil)
     weak var delegate:ReceiveData! //send the data back to DataviewController
